@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 int main()
+#fasfas
 {
     std::vector<std::string> frazy = {"EMPTY",
                                       "It is certain.",
