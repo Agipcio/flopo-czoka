@@ -1,1 +1,1 @@
-kakakakakaka
+.,zx.zx,.z,x.zx,.zx,.zx,z.x,z.x,zx,.z.x,z.x,zx,.zx.z,xz,.xz.x,z.x,zx.,zx.z,x.z,x.,.,.,.zx,.z,x.z,x
