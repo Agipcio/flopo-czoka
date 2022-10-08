@@ -1,1 +1,1 @@
-SEksSEksSEksSEksSEksSEksSEksSEksSEks
+Ej maciek idziesz na piwko?
