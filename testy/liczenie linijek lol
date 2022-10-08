@@ -1,0 +1,13 @@
+#include <iostream>
+#include <string>
+#include <chrono>
+using namespace std;
+int main()
+{
+    int sekundy=0
+    sekundy = millis() / 1000;
+    if (sekundy == 60){
+      sekundy = 0;
+    }
+    cout << sekundy;
+}
