@@ -2,6 +2,7 @@
 #include <vector>
 int main()
 {
+    
     int liczba;
     std::vector<int> ciag;
     std::cout << "podaj liczbe: ";
@@ -12,29 +13,26 @@ int main()
         ciag.push_back(liczba);
         std::cout << ciag[i] << "\n";
     }
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < ciag.size(); i++)
     {
-        if (ciag[i] % 2 == 0 && ciag[i] != 2)
+        bool is_prime = true;
+        if (ciag[i] == 0 || ciag[i] == 1)
         {
-            std::cout << "tak";
+            is_prime = false;
         }
+
+        for (int j = 2; j <= ciag[i] / 2; j++)
+        {
+            if (ciag[i] % j == 0)
+            {
+                is_prime = false;
+                break;
+            }
+        }
+
+        if (is_prime)
+            std::cout << ciag[i] << "TAK\n";
         else
-        {
-            if (ciag[i] % 3 == 0 && ciag[i] != 3)
-            {
-                std::cout << "tak";
-            }
-            else
-            {
-                if (ciag[i] % 5 == 0 && ciag[i] != 5)
-                {
-                    std::cout << "tak";
-                }
-                else
-                {
-                    std::cout << "nie";
-                }
-            }
-        }
+            std::cout << ciag[i] << " NIE\n";
     }
 }
