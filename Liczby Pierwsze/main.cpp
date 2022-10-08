@@ -1,35 +1,30 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-
 int main()
 {      
     std::vector<int> liczby;
-    bool pierwsza = true;
     int x, y;
-    std::cout<< "podaj 4 liczby:";
+    std::cout<< "podaj 4 pozytywne liczby: \n";
     for(int i=0; i<=3; i++)
         {   
             std::cin>>y;
-            // std::cout<<std::endl;
             liczby.push_back(y);
         }
-    for(int j=0; j==3; j++)
+    for(int j=0; j<=3; j++)
     {
         x=liczby[j];
-
-        for(int i=2; i==x; i++)
+         bool pierwsza = true;
+        for(int i=2; i<=x/2; i++)
         {
           if(x % i == 0)
-          pierwsza = false;
-            break;
+            {pierwsza = false;
+            break;}
          }
-         if (pierwsza)
-            std::cout<<"tak \n";
-         else
-            std::cout<<"nie \n";
+         if (pierwsza == true)
+            std::cout<<"liczba " <<x<<" jest pierwsza \n";
+         if (pierwsza == false)
+            std::cout<<"liczba " <<x<<" nie jest pierwsza \n";
     }
-    
-
     return 0;
 }
